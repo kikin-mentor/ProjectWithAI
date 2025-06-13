@@ -1,17 +1,20 @@
+$def with(response="",prompt="")
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>--------HOLA---------</title>
-</head>
-<body>
-    <form class="main-cont">
-        <input type="text" name="respuesta">
-        <input type="text" name="prompt">
-    
-        <button class="btn-gen"></button>
-        <button class="btn-aud"></button>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat gp</title>
+  </head>
+  <body>
+    <h1 style="color: blueviolet;">Chat GP UTEC</h1>
+    <form method="POST">
+         <label for="response">Respuesta:</label><br>
+        <textarea readonly name="response" id="response" rows="10" cols="90">$response</textarea><br><br>
+        <label for="prompt">Prompt:</label><br>
+        <textarea name="prompt" id="prompt" rows="1" cols="50">$prompt</textarea><br><br>
+        <input type="submit" value="Generar">
+        <input type="submit" value="Audio">
     </form>
-</body>
+  </body>
 </html>
